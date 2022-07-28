@@ -1,5 +1,5 @@
 
-palavra_secreta = 'matue'
+palavra_secreta = 'zenke'
 palavra_usuario = []
 nome = input("Digite seu nome: ")
 chances = 3
