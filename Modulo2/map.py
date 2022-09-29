@@ -25,15 +25,33 @@ pessoas = [
  ]
 
 
-l1= [1,2,3,4,5,6,7,8,9,10]
+l1= [1,2,3,4,5,6,7,8,9,10,20]
 
+#exemplo 1
 def multi(lista):
     return lista * 2
 
-
-
             #obrigatorio passar uma func como primeiro
-teste = map(lambda x:x*2,l1)
+teste = map(multi,l1)
 
-print(l1)
 print(list(teste))
+
+#exemplo 2 - Aumentar o Preço em 10 por cento
+
+def aumenta(p):
+    p['valor'] = round(p['valor'] * 1.05)
+    return p
+
+map_valor = map(aumenta,produtos)
+
+for np in map_valor:
+    print(np)
+    
+print()   
+#exemplo 3 pegar os nomes das pessoas
+
+nomes = map(lambda nome:nome['nome'], pessoas)
+
+
+for n in nomes:
+    print(n)
