@@ -29,3 +29,16 @@ def par_impar(num):
 numero = multiplica(3,3)
 print(par_impar(numero))
 
+
+
+#Funções de Primeira classe
+
+def saudacao(nome,msg):
+    return f'{nome}, {msg}'
+
+
+def executa_funcoes(funcao,*args):
+    return funcao(*args)
+
+
+print(executa_funcoes(saudacao,'caio','tudo bem?'))
